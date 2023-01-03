@@ -16,6 +16,7 @@ class ComputerCodebreaker < Codebreaker
     puts 'Computer guess: '
     guess.clear
     ai_algorithm(codemaker)
+    sleep(1.5)
   end
 
   def ai_algorithm(codemaker)

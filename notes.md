@@ -24,6 +24,16 @@
     <br><br>
 
 - Codebreaker guess feedback
+
   - See how many numbers match
   - See how many are in the correct position
   - [Helpful Algorithm](https://stackoverflow.com/a/2005930)
+    <br><br>
+
+- Codemaker class
+
+  - Create code
+  - Provide feedback for guess
+
+- Codebreaker class
+  - Guess code

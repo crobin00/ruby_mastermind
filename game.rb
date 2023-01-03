@@ -1,12 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'input'
-
 # Class for game
 class Game
   attr_accessor :codemaker, :codebreaker, :turns_played
-
-  include Input
 
   def initialize(codemaker, codebreaker)
     @codemaker = codemaker

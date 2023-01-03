@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'display'
+
 # Module for user input
 module Input
   def code_input
@@ -9,11 +11,11 @@ module Input
       user_input = gets.chomp
       user_input_arr = user_input.delete(' ').chars
       if user_input_arr.length != 4
-        puts 'Incorrect input length'
+        puts Display.invalid_length
         next
       end
       if user_input_arr.any? { |char| char.to_i < 1 || char.to_i > 6 }
-        puts 'Invalid character'
+        puts Display.invalid_character
         next
       end
       break

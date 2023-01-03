@@ -19,10 +19,17 @@ class Game
       feedback = codemaker.feedback(codebreaker.guess)
       codebreaker.display_guess
       codemaker.display_clues(feedback)
-      break if feedback.last == 4
+      if feedback.last == 4
+        puts Display.code_broken
+        break
+      end
 
       self.turns_played += 1
-      break if turns_played > 11
+      puts Display.turns(12 - turns_played), ''
+      if turns_played > 11
+        puts Display.out_of_turns
+        break
+      end
     end
   end
 end

@@ -79,6 +79,18 @@ module Display
     HEREDOC
   end
 
+  def self.code_broken
+    Formatting.underline(Formatting.bold('Code broken!'))
+  end
+
+  def self.out_of_turns
+    Formatting.underline(Formatting.bold('Out of turns!'))
+  end
+
+  def self.turns(turns)
+    "Turns left: #{turns}"
+  end
+
   def self.all_colors
     <<~HEREDOC
       #{Formatting.pick_color('1')}#{Formatting.pick_color('2')}#{Formatting.pick_color('3')}\

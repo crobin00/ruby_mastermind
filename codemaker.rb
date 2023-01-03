@@ -24,7 +24,6 @@ class Codemaker
 
   def display_clues(feedback)
     puts Display.feedback_clues(feedback)
-    puts
   end
 
   private

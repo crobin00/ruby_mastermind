@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'display'
+
 # Class for game
 class Game
   attr_accessor :codemaker, :codebreaker, :turns_played
@@ -15,7 +17,8 @@ class Game
     loop do
       codebreaker.guess_code
       feedback = codemaker.feedback(codebreaker.guess)
-      p feedback
+      puts Display.feedback_clues(feedback)
+      puts
       break if feedback.last == 4
 
       self.turns_played += 1

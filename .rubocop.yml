@@ -15,3 +15,8 @@ AllCops:
 Metrics/MethodLength:
   IgnoredMethods:
     - code_input
+    - pick_color
+
+Metrics/AbcSize:
+  IgnoredMethods:
+    - instructions

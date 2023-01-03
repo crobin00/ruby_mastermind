@@ -2,7 +2,7 @@
 
 # Module for user input
 module Input
-  def input
+  def code_input
     user_input = ''
     user_input_arr = []
     loop do
@@ -19,5 +19,14 @@ module Input
       break
     end
     user_input_arr
+  end
+
+  def self.choose_role_input
+    user_input = ''
+    loop do
+      user_input = gets.chomp.downcase
+      break if user_input.match?('maker') || user_input.match?('breaker')
+    end
+    user_input
   end
 end

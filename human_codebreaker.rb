@@ -9,6 +9,6 @@ class HumanCodebreaker < Codebreaker
 
   def guess_code
     puts 'Guess code: '
-    self.guess = input
+    self.guess = code_input
   end
 end

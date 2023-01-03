@@ -9,6 +9,6 @@ class HumanCodemaker < Codemaker
 
   def create_code
     puts 'Create codemaker code: '
-    self.maker_code = input
+    self.maker_code = code_input
   end
 end

@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 require_relative 'game'
-require_relative 'codemaker'
+require_relative 'human_codemaker'
 require_relative 'human_codebreaker'
+require_relative 'computer_codemaker'
 
-game = Game.new(Codemaker.new, HumanCodebreaker.new)
+game = Game.new(ComputerCodemaker.new, HumanCodebreaker.new)
 game.run

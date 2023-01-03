@@ -5,7 +5,7 @@ class Codemaker
   attr_accessor :maker_code
 
   def initialize
-    @maker_code = %w[1 1 6 4]
+    @maker_code = []
   end
 
   # Black pegs = compare color at each position for breaker guess and maker code.

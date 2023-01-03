@@ -7,4 +7,9 @@ class Codebreaker
   def initialize
     @guess = []
   end
+
+  def display_guess
+    guess.each { |guess| print Formatting.pick_color(guess) }
+    puts
+  end
 end

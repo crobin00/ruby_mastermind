@@ -9,7 +9,5 @@ class ComputerCodebreaker < Codebreaker
     puts 'Computer guess: '
     guess.clear
     4.times { guess.push(rand(1..6).to_s) }
-    guess.each { |guess| print Formatting.pick_color(guess) }
-    puts
   end
 end

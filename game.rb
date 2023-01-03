@@ -17,8 +17,8 @@ class Game
     loop do
       codebreaker.guess_code
       feedback = codemaker.feedback(codebreaker.guess)
-      puts Display.feedback_clues(feedback)
-      puts
+      codebreaker.display_guess
+      codemaker.display_clues(feedback)
       break if feedback.last == 4
 
       self.turns_played += 1

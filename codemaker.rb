@@ -22,6 +22,11 @@ class Codemaker
     [white_pegs_total, black_pegs_total]
   end
 
+  def display_clues(feedback)
+    puts Display.feedback_clues(feedback)
+    puts
+  end
+
   private
 
   def calculate_black_pegs(breaker_guess)

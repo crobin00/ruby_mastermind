@@ -49,7 +49,7 @@ module Display
 
   def self.choose_code
     <<~HEREDOC
-      Enter code from the following colors:
+      Enter 4-digit code from the following colors:
       #{all_colors}
     HEREDOC
   end
@@ -60,8 +60,8 @@ module Display
 
   def self.feedback_clues(feedback)
     string = 'Clues: '
-    feedback.last.times { string += '● '}
-    feedback.first.times { string += '○ '}
+    feedback.last.times { string += '● ' }
+    feedback.first.times { string += '○ ' }
     string
   end
 

@@ -16,7 +16,9 @@ Metrics/MethodLength:
   IgnoredMethods:
     - code_input
     - pick_color
+    - run
 
 Metrics/AbcSize:
   IgnoredMethods:
     - instructions
+    - run

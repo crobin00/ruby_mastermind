@@ -28,6 +28,8 @@ module Input
     loop do
       user_input = gets.chomp.downcase
       break if user_input.match?('maker') || user_input.match?('breaker')
+
+      puts Display.choose_role_error
     end
     user_input
   end

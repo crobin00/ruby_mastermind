@@ -7,7 +7,7 @@ require_relative 'input'
 class HumanCodebreaker < Codebreaker
   include Input
 
-  def guess_code
+  def guess_code(*)
     puts 'Guess code: '
     self.guess = code_input
   end

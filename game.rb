@@ -15,7 +15,7 @@ class Game
   def run
     codemaker.create_code
     loop do
-      codebreaker.guess_code
+      codebreaker.guess_code(codemaker)
       feedback = codemaker.feedback(codebreaker.guess)
       codebreaker.display_guess
       codemaker.display_clues(feedback)
